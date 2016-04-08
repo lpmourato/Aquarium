@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="0dp"
+    android:orientation="horizontal"
+    android:paddingBottom="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".AquariumMain" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2" 
+        android:background="@drawable/aquarium">
+        <com.mourato.aquarium.controller.Game
+            android:id="@+id/game"
+            android:layout_width="fill_parent"
+	        android:layout_height="250dp"
+	        android:layout_gravity="center_vertical|left"
+            >
+            
+            </com.mourato.aquarium.controller.Game>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:background="@drawable/shelf"
+         >
+
+        <ImageView
+            android:id="@+id/btn_big_fish_food"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/full_pot_food"
+            android:layout_marginTop="10dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+        
+        <ImageView
+            android:id="@+id/btn_small_fish_food"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/full_pot_food"
+            android:scaleX="0.4"
+            android:scaleY="0.4" />
+
+    </LinearLayout>
+
+</LinearLayout>
